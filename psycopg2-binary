@@ -1,0 +1,24 @@
+2021-11-04T21:12:28,109 Using pip 21.3.1 from C:\Python310\lib\site-packages\pip (python 3.10)
+2021-11-04T21:12:28,110 Non-user install because site-packages writeable
+2021-11-04T21:12:28,122 WARNING: Ignoring invalid distribution -ip (c:\python310\lib\site-packages)
+2021-11-04T21:12:28,144 Created temporary directory: C:\Users\AegisD\AppData\Local\Temp\pip-ephem-wheel-cache-siv8aurv
+2021-11-04T21:12:28,145 Created temporary directory: C:\Users\AegisD\AppData\Local\Temp\pip-req-tracker-tt1y4qx8
+2021-11-04T21:12:28,145 Initialized build tracking at C:\Users\AegisD\AppData\Local\Temp\pip-req-tracker-tt1y4qx8
+2021-11-04T21:12:28,145 Created build tracker: C:\Users\AegisD\AppData\Local\Temp\pip-req-tracker-tt1y4qx8
+2021-11-04T21:12:28,146 Entered build tracker: C:\Users\AegisD\AppData\Local\Temp\pip-req-tracker-tt1y4qx8
+2021-11-04T21:12:28,146 Created temporary directory: C:\Users\AegisD\AppData\Local\Temp\pip-install-ec5d4x3k
+2021-11-04T21:12:28,146 ERROR: You must give at least one requirement to install (see "pip help install")
+2021-11-04T21:12:28,147 Exception information:
+2021-11-04T21:12:28,147 Traceback (most recent call last):
+2021-11-04T21:12:28,147   File "C:\Python310\lib\site-packages\pip\_internal\cli\base_command.py", line 164, in exc_logging_wrapper
+2021-11-04T21:12:28,147     status = run_func(*args)
+2021-11-04T21:12:28,147   File "C:\Python310\lib\site-packages\pip\_internal\cli\req_command.py", line 205, in wrapper
+2021-11-04T21:12:28,147     return func(self, options, args)
+2021-11-04T21:12:28,147   File "C:\Python310\lib\site-packages\pip\_internal\commands\install.py", line 305, in run
+2021-11-04T21:12:28,147     reqs = self.get_requirements(args, options, finder, session)
+2021-11-04T21:12:28,147   File "C:\Python310\lib\site-packages\pip\_internal\cli\req_command.py", line 425, in get_requirements
+2021-11-04T21:12:28,147     raise CommandError(
+2021-11-04T21:12:28,147 pip._internal.exceptions.CommandError: You must give at least one requirement to install (see "pip help install")
+2021-11-04T21:12:28,148 WARNING: Ignoring invalid distribution -ip (c:\python310\lib\site-packages)
+2021-11-04T21:12:28,168 WARNING: Ignoring invalid distribution -ip (c:\python310\lib\site-packages)
+2021-11-04T21:12:28,172 Removed build tracker: 'C:\\Users\\AegisD\\AppData\\Local\\Temp\\pip-req-tracker-tt1y4qx8'

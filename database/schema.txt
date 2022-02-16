@@ -1,0 +1,52 @@
+application_id
+discord_user
+discord_nickname
+discord_tag
+application_categoryid
+application_messages
+application_active
+application_unweighted_yscore
+application_unweighted_nscore
+application_weighted_yscore
+application_weighted_nscore
+application_createdpn
+application_vouches
+application_bans
+
+
+CREATE TABLE applications (
+  application_id SERIAL PRIMARY KEY,
+  discord_user VARCHAR(18) NOT NULL,
+  discord_nickname VARCHAR(64),
+  discord_tag VARCHAR(64),
+  application_categoryid SMALLINT,
+  application_messages VARCHAR(32),
+  application_active BOOLEAN,
+  application_unweighted_yscore SMALLINT,
+  application_unweighted_nscore SMALLINT,
+  application_weighted_yscore SMALLINT,
+  application_weighted_nscore SMALLINT,
+  application_createdon INT,
+  application_vouches SMALLINT,
+  application_bans SMALLINT,
+  application_channelid VARCHAR(18),
+  application_messageid VARCHAR(18)
+)
+
+CREATE TABLE votes (
+  vote_id SERIAL PRIMARY KEY,
+  application_id INT,
+  discord_user VARCHAR(18) NOT NULL,
+  vote_type SMALLINT,
+  vote_weight SMALLINT,
+  CONSTRAINT fk_application
+    FOREIGN KEY(application_id)
+      REFERENCES applications(application_id)
+      ON DELETE CASCADE
+)
+
+CREATE TABLE mails (
+  mail_id SERIAL PRIMARY KEY,
+  discord_user VARCHAR(18),
+  mail_messageid VARCHAR(18)
+)

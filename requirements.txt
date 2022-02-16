@@ -1,0 +1,4 @@
+discord==1.7.3
+discord-components==2.1.2
+discord.py==1.7.3
+psycopg2-binary==2.9.1
